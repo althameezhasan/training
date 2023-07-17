@@ -1,0 +1,69 @@
+class Lift {
+  constructor() {
+    this.currentFloor = 0;
+    this.direction = "up";
+    this.stops = [];
+  }
+
+  goToFloor(floor) {
+    if (floor > 30) {
+      console.log("Invalid floor input. Limit is 30.");
+      return;
+    }
+
+    this.stops.push(floor);
+    this.sortStops();
+    this.start();
+  }
+
+  sortStops() {
+    if (this.direction === "up") {
+      this.stops.sort((a, b) => a - b);
+    } else {
+      this.stops.sort((a, b) => b - a);
+    }
+  }
+
+  start() {
+    if (this.stops.length === 0) {
+      console.log("No more stops. Lift is idle.");
+      return;
+    }
+
+    const nextFloor = this.stops.shift();
+    if (nextFloor > this.currentFloor) {
+      this.direction = "up";
+    } else if (nextFloor < this.currentFloor) {
+      this.direction = "down";
+    }
+
+    const output = this.generateFloorSequence(nextFloor);
+    console.log(output);
+    this.currentFloor = nextFloor;
+    this.start();
+  }
+
+  generateFloorSequence(nextFloor) {
+    const floorSequence = [];
+
+    if (this.direction === "up") {
+      for (let floor = this.currentFloor + 1; floor <= nextFloor; floor++) {
+        floorSequence.push(floor);
+      }
+    } else {
+      for (let floor = this.currentFloor - 1; floor >= nextFloor; floor--) {
+        floorSequence.push(floor);
+      }
+    }
+
+    return floorSequence;
+  }
+}
+
+// Usage
+const lift = new Lift();
+lift.goToFloor(6);
+lift.goToFloor(4);
+lift.goToFloor(31);
+lift.goToFloor(10);
+lift.goToFloor(100);
