@@ -1,0 +1,203 @@
+.nhm_footer {
+    background-color: #1a55a3;
+}
+
+.nhm_footer ul.iconli {
+    margin: 120px 20px;
+    list-style: none;
+    width: auto;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.nhm_footer ul.iconli li {
+    float: left;
+}
+
+.nhm_footer ul.iconli li a {
+    background: url(imagejhbfkauujaywhite.png) no-repeat;
+    width: 80px;
+    height: 100px;
+    display: block;
+    position: relative;
+    /* margin: 10px; */
+    margin:0 10px 0 10px ;
+    padding:5px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    border-right: 1px solid #3d6fad;
+    border-left: 1px solid #3d6fad;
+
+}
+
+.nhm_footer ul.iconli li a span {
+    position: absolute;
+    bottom: 0;
+    top: 120px;
+    left:1px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color: #000;
+    width: 100%;
+    
+}
+
+.nhm_footer ul.iconli li a:hover span {
+    color: #000;
+}
+
+.nhm_footer ul.iconli li a.rss {
+    background-position: -283px -128px
+}
+
+.nhm_footer ul.iconli li a.rss:hover {
+    background-position: -283px -13px
+}
+
+.nhm_footer ul.iconli li a.news {
+    background-position: -678px -125px;
+}
+
+.nhm_footer ul.iconli li a.news:hover {
+    background-position: -678px -15px;
+}
+
+.nhm_footer ul.iconli li a.mobile {
+    background-position: -456px -127px
+}
+
+.nhm_footer ul.iconli li a.mobile:hover {
+    background-position: -456px -15px
+}
+
+.nhm_footer ul.iconli li a.apps {
+    background-position: -565px -125px
+}
+
+.nhm_footer ul.iconli li a.apps:hover {
+    background-position: -565px -15px
+}
+
+.nhm_footer ul.iconli li a.fb {
+    background-position: -1px -130px
+}
+
+.nhm_footer ul.iconli li a.fb:hover {
+    background-position: -1px -12px
+}
+
+.nhm_footer ul.iconli li a.twt {
+    background-position: -185px -128px
+}
+
+.nhm_footer ul.iconli li a.twt:hover {
+    background-position: -185px -12px
+}
+
+.nhm_footer ul.iconli li a.gp {
+    background-position: -93px -125px;
+    width: 80px;
+}
+
+.nhm_footer ul.iconli li a.gp:hover {
+    background-position: -93px -15px;
+    width: 80px;
+}
+
+.nhm_footer ul.iconli li a.dot {
+    background-position: -661px -88px
+}
+
+.nhm_footer ul.iconli li a.dot:hover {
+    background-position: -661px 0px
+}
+
+.nhm_footer ul.iconli li a.windows {
+    background-position: -735px -88px;
+    width: 88px;
+    margin-right: 30px;
+}
+
+.nhm_footer ul.iconli li a.windows:hover {
+    background-position: -735px 0px;
+    width: 88px;
+    margin-right: 30px;
+}
+
+.nhm_footer ul.iconli li a.pint {
+    background-position: -853px -87px;
+    margin-right: 0;
+}
+
+.nhm_footer ul.iconli li a.pint:hover {
+    background-position: -853px 0px;
+    margin-right: 0;
+}
+
+.nhm_footer ul.iconli li a.apple {
+    background-position: -781px -121px;
+}
+
+.nhm_footer ul.iconli li a.apple:hover {
+    background-position: -781px -9px;
+}
+
+.nhm_footer ul.iconli li a.droid {
+    background-position: -368px -125px;
+}
+
+.nhm_footer ul.iconli li a.droid:hover {
+    background-position: -368px -14px;
+}
+
+.nhm_footer ul.iconli li a.lnkdin {
+    background-position: -1121px -87px;
+    margin-right: 0;
+}
+
+.nhm_footer ul.iconli li a.lnkdin:hover {
+    background-position: -1121px 0px;
+    margin-right: 0;
+}
+
+.nhm_footer ul.iconli li a.windows {
+    background-position: -872px -121px;
+}
+
+.nhm_footer ul.iconli li a.windows:hover {
+    background-position: -872px -11px;
+}
+
+.nhm_footer ul.iconli li a.pinterest {
+    background-position: -853px -81px;
+    margin-left: 30px;
+}
+
+.nhm_footer ul.iconli li a.pinterest:hover {
+    background-position: -853px 0px;
+    margin-left: 30px;
+}
+.rmborder{
+    border-right:none!important;
+}
+
+/*-- mobile display-- */
+@media only screen and (max-width: 570px) {
+  
+    .nhm_footer ul.iconli {
+        margin: 120px auto;
+        list-style: none;
+        max-width: 100%;
+        display: inline-block;
+       
+  }
+}
+  
+
+
+
+/*--end of mobile display-*/
